@@ -1,4 +1,13 @@
 {
   "item.cannacraft.zircon": "Zircon",
-  "item.cannacraft.raw_zircon": "Raw Zircon"
+  "item.cannacraft.raw_zircon": "Raw Zircon",
+
+  "block.cannacraft.zircon_block": "Block of Zircon",
+  "block.cannacraft.zircon_ore": "Zircon Ore",
+  "block.cannacraft.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.cannacraft.netherrack_zircon_ore": "Netherrack Zircon Ore",
+  "block.cannacraft.endstone_zircon_ore": "Endstone Zircon Ore",
+
+  "itemGroup.cannacrafttab": "CannaCraft"
+
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+  "cannacraft:zircon_ore",
+  "cannacraft:deepslate_zircon_ore",
+  "cannacraft:netherrack_zircon_ore",
+  "cannacraft:endstone_zircon_ore",
+  "cannacraft:zircon_block"
+  ]
+}

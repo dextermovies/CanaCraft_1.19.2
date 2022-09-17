@@ -1,6 +1,7 @@
 package net.joshua.cannacraft;
 
 import com.mojang.logging.LogUtils;
+import net.joshua.cannacraft.block.ModBlocks;
 import net.joshua.cannacraft.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,11 +17,14 @@ public class CannaCraft
     public static final String MOD_ID = "cannacraft";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
+
     public CannaCraft()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

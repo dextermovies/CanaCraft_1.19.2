@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cannacraft:zircon_block"
+    }
+  ],
+  "result": {
+    "item": "cannacraft:zircon",
+    "count": 9
+  }
+}
+
