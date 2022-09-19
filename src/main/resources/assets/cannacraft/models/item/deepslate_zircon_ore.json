@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "block/cube_all",
   "textures": {
-    "layer0": "cannacraft:block/deepslate_zircon_ore"
+    "all": "cannacraft:block/deepslate_zircon_ore"
   }
 }

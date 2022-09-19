@@ -6,8 +6,7 @@ import net.minecraft.world.item.ItemStack;
 public class ModCreativeModeTab {
     public static final CreativeModeTab CANNACRAFT_TAB = new CreativeModeTab("cannacrafttab") {
         @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.ZIRCON.get()) ;
+        public ItemStack makeIcon() { return new ItemStack(ModItems.ZIRCON.get()) ;
         }
     };
 }

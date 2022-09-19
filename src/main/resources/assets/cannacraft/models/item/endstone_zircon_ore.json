@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "block/cube_all",
   "textures": {
-    "layer0": "cannacraft:block/endstone_zircon_ore"
+    "all": "cannacraft:block/endstone_zircon_ore"
   }
 }

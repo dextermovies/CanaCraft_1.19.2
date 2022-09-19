@@ -1,6 +1,8 @@
 package net.joshua.cannacraft.block;
 
 import net.joshua.cannacraft.CannaCraft;
+import net.joshua.cannacraft.block.custom.JumpBlock;
+import net.joshua.cannacraft.block.custom.ZirconLampBlock;
 import net.joshua.cannacraft.item.ModCreativeModeTab;
 import net.joshua.cannacraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -41,6 +43,17 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.CANNACRAFT_TAB);
+
+    public static final RegistryObject<Block> JUMP_BLOCK = registerBlock("jump_block",
+            () -> new JumpBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CANNACRAFT_TAB);
+
+    public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()
+                     .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)),
+                          ModCreativeModeTab.CANNACRAFT_TAB);
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
