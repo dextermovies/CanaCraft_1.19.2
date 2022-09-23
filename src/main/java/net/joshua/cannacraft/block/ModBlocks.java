@@ -1,8 +1,7 @@
 package net.joshua.cannacraft.block;
 
 import net.joshua.cannacraft.CannaCraft;
-import net.joshua.cannacraft.block.custom.JumpBlock;
-import net.joshua.cannacraft.block.custom.ZirconLampBlock;
+import net.joshua.cannacraft.block.custom.*;
 import net.joshua.cannacraft.item.ModCreativeModeTab;
 import net.joshua.cannacraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -10,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -20,7 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public abstract class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CannaCraft.MOD_ID);
 
@@ -54,7 +54,13 @@ public class ModBlocks {
                      .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)),
                           ModCreativeModeTab.CANNACRAFT_TAB);
 
+    public static final RegistryObject<Block> CANNABIS_SATIVA_CROP = BLOCKS.register("cannabis_sativa_crop",
+            () -> new Cannabis_Sativa_Crop(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> CANNABIS_INDICA_CROPBLOCK = BLOCKS.register("cannabis_indica_crop",
+            () -> new Cannabis_Indica_CropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

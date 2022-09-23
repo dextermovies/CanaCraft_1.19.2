@@ -1,7 +1,14 @@
 {
   "item.cannacraft.zircon": "Zircon",
+  "item.cannacraft.cannacraft_ico": "CannaCraft Icon",
   "item.cannacraft.raw_zircon": "Raw Zircon",
   "item.cannacraft.eight_ball": "Eight Ball",
+  "item.cannacraft.blueberry": "Blueberry",
+  "item.cannacraft.blueberry_seeds": "Blueberry Seeds",
+  "item.cannacraft.cannabis_indica": "Cannabis Indica Bud",
+  "item.cannacraft.cannabis_indica_seeds": "Cannabis Indica Seeds",
+  "item.cannacraft.cannabis_sativa": "Cannabis Sativa Bud",
+  "item.cannacraft.cannabis_sativa_seeds": "Cannabis Sativa Seeds",
 
   "block.cannacraft.zircon_block": "Block of Zircon",
   "block.cannacraft.zircon_ore": "Zircon Ore",
@@ -10,6 +17,10 @@
   "block.cannacraft.endstone_zircon_ore": "Endstone Zircon Ore",
   "block.cannacraft.jump_block": "Jump Block",
   "block.cannacraft.zircon_lamp": "Zircon Lamp",
+  "block.cannacraft.blueberry_crop": "Blueberry Crop",
+  "block.cannacraft.cannabis_sativa_crop": "Cannabis Sativa Crop",
+  "block.cannacraft.cannabis_indica_cropblock": "Cannabis Indica Crop",
+
 
   "itemGroup.cannacrafttab": "CannaCraft"
 

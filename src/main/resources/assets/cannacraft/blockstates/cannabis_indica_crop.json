@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": {"model": "cannacraft:block/cannabis_indica_stage0"},
+    "age=1": {"model": "cannacraft:block/cannabis_indica_stage1"},
+    "age=2": {"model": "cannacraft:block/cannabis_indica_stage2"},
+    "age=3": {"model": "cannacraft:block/cannabis_indica_stage3"},
+    "age=4": {"model": "cannacraft:block/cannabis_indica_stage4"},
+    "age=5": {"model": "cannacraft:block/cannabis_indica_stage5"},
+    "age=6": {"model": "cannacraft:block/cannabis_indica_stage6"}
+  }
+}
